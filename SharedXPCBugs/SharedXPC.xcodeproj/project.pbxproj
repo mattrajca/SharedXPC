@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C93E9A4F1D57DD4A0066B48B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C93E9A4E1D57DD4A0066B48B /* AppDelegate.m */; };
+		C93E9A521D57DD4A0066B48B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C93E9A511D57DD4A0066B48B /* main.m */; };
+		C93E9A541D57DD4A0066B48B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C93E9A531D57DD4A0066B48B /* Assets.xcassets */; };
+		C93E9A571D57DD4A0066B48B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C93E9A551D57DD4A0066B48B /* MainMenu.xib */; };
+		C93E9A691D57DD590066B48B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C93E9A681D57DD590066B48B /* main.m */; };
+		C93E9A6D1D57DD590066B48B /* XPCService.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = C93E9A621D57DD590066B48B /* XPCService.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C93E9A851D57E1380066B48B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C93E9A841D57E1380066B48B /* main.m */; };
+		C93E9A8C1D57E1620066B48B /* process in CopyFiles */ = {isa = PBXBuildFile; fileRef = C93E9A821D57E1380066B48B /* process */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C93E9A6B1D57DD590066B48B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C93E9A421D57DD4A0066B48B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C93E9A611D57DD590066B48B;
+			remoteInfo = Service;
+		};
+		C93E9A891D57E1520066B48B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C93E9A421D57DD4A0066B48B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C93E9A811D57E1380066B48B;
+			remoteInfo = process;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C93E9A711D57DD590066B48B /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				C93E9A6D1D57DD590066B48B /* XPCService.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C93E9A801D57E1380066B48B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		C93E9A8B1D57E1590066B48B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 6;
+			files = (
+				C93E9A8C1D57E1620066B48B /* process in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C93E9A4A1D57DD4A0066B48B /* SharedXPC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SharedXPC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C93E9A4D1D57DD4A0066B48B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C93E9A4E1D57DD4A0066B48B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C93E9A511D57DD4A0066B48B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C93E9A531D57DD4A0066B48B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C93E9A561D57DD4A0066B48B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C93E9A581D57DD4A0066B48B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C93E9A621D57DD590066B48B /* XPCService.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = XPCService.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		C93E9A681D57DD590066B48B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C93E9A6A1D57DD590066B48B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C93E9A721D57DE6B0066B48B /* SharedXPC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SharedXPC.entitlements; sourceTree = "<group>"; };
+		C93E9A821D57E1380066B48B /* process */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = process; sourceTree = BUILT_PRODUCTS_DIR; };
+		C93E9A841D57E1380066B48B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C9F5FC161D85A67F0073862A /* Service.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Service.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C93E9A471D57DD4A0066B48B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C93E9A5F1D57DD590066B48B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C93E9A7F1D57E1380066B48B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C93E9A411D57DD4A0066B48B = {
+			isa = PBXGroup;
+			children = (
+				C93E9A4C1D57DD4A0066B48B /* App */,
+				C93E9A631D57DD590066B48B /* XPCService */,
+				C93E9A831D57E1380066B48B /* process */,
+				C93E9A4B1D57DD4A0066B48B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C93E9A4B1D57DD4A0066B48B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C93E9A4A1D57DD4A0066B48B /* SharedXPC.app */,
+				C93E9A621D57DD590066B48B /* XPCService.xpc */,
+				C93E9A821D57E1380066B48B /* process */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C93E9A4C1D57DD4A0066B48B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C93E9A4D1D57DD4A0066B48B /* AppDelegate.h */,
+				C93E9A4E1D57DD4A0066B48B /* AppDelegate.m */,
+				C93E9A531D57DD4A0066B48B /* Assets.xcassets */,
+				C93E9A581D57DD4A0066B48B /* Info.plist */,
+				C93E9A551D57DD4A0066B48B /* MainMenu.xib */,
+				C93E9A721D57DE6B0066B48B /* SharedXPC.entitlements */,
+				C93E9A501D57DD4A0066B48B /* Supporting Files */,
+			);
+			name = App;
+			path = SharedXPC;
+			sourceTree = "<group>";
+		};
+		C93E9A501D57DD4A0066B48B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C93E9A511D57DD4A0066B48B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C93E9A631D57DD590066B48B /* XPCService */ = {
+			isa = PBXGroup;
+			children = (
+				C9F5FC161D85A67F0073862A /* Service.entitlements */,
+				C93E9A681D57DD590066B48B /* main.m */,
+				C93E9A6A1D57DD590066B48B /* Info.plist */,
+			);
+			name = XPCService;
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C93E9A831D57E1380066B48B /* process */ = {
+			isa = PBXGroup;
+			children = (
+				C93E9A841D57E1380066B48B /* main.m */,
+			);
+			path = process;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C93E9A491D57DD4A0066B48B /* SharedXPC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C93E9A5B1D57DD4A0066B48B /* Build configuration list for PBXNativeTarget "SharedXPC" */;
+			buildPhases = (
+				C93E9A461D57DD4A0066B48B /* Sources */,
+				C93E9A471D57DD4A0066B48B /* Frameworks */,
+				C93E9A481D57DD4A0066B48B /* Resources */,
+				C93E9A711D57DD590066B48B /* Embed XPC Services */,
+				C93E9A8B1D57E1590066B48B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C93E9A8A1D57E1520066B48B /* PBXTargetDependency */,
+				C93E9A6C1D57DD590066B48B /* PBXTargetDependency */,
+			);
+			name = SharedXPC;
+			productName = SharedXPC;
+			productReference = C93E9A4A1D57DD4A0066B48B /* SharedXPC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C93E9A611D57DD590066B48B /* XPCService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C93E9A6E1D57DD590066B48B /* Build configuration list for PBXNativeTarget "XPCService" */;
+			buildPhases = (
+				C93E9A5E1D57DD590066B48B /* Sources */,
+				C93E9A5F1D57DD590066B48B /* Frameworks */,
+				C93E9A601D57DD590066B48B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XPCService;
+			productName = Service;
+			productReference = C93E9A621D57DD590066B48B /* XPCService.xpc */;
+			productType = "com.apple.product-type.xpc-service";
+		};
+		C93E9A811D57E1380066B48B /* process */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C93E9A861D57E1380066B48B /* Build configuration list for PBXNativeTarget "process" */;
+			buildPhases = (
+				C93E9A7E1D57E1380066B48B /* Sources */,
+				C93E9A7F1D57E1380066B48B /* Frameworks */,
+				C93E9A801D57E1380066B48B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = process;
+			productName = process;
+			productReference = C93E9A821D57E1380066B48B /* process */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C93E9A421D57DD4A0066B48B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Matt Rajca";
+				TargetAttributes = {
+					C93E9A491D57DD4A0066B48B = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = RJKYY38TY2;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					C93E9A611D57DD590066B48B = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = RJKYY38TY2;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+					C93E9A811D57E1380066B48B = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = C93E9A451D57DD4A0066B48B /* Build configuration list for PBXProject "SharedXPC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C93E9A411D57DD4A0066B48B;
+			productRefGroup = C93E9A4B1D57DD4A0066B48B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C93E9A491D57DD4A0066B48B /* SharedXPC */,
+				C93E9A611D57DD590066B48B /* XPCService */,
+				C93E9A811D57E1380066B48B /* process */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C93E9A481D57DD4A0066B48B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C93E9A541D57DD4A0066B48B /* Assets.xcassets in Resources */,
+				C93E9A571D57DD4A0066B48B /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C93E9A601D57DD590066B48B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C93E9A461D57DD4A0066B48B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C93E9A521D57DD4A0066B48B /* main.m in Sources */,
+				C93E9A4F1D57DD4A0066B48B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C93E9A5E1D57DD590066B48B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C93E9A691D57DD590066B48B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C93E9A7E1D57E1380066B48B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C93E9A851D57E1380066B48B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C93E9A6C1D57DD590066B48B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C93E9A611D57DD590066B48B /* XPCService */;
+			targetProxy = C93E9A6B1D57DD590066B48B /* PBXContainerItemProxy */;
+		};
+		C93E9A8A1D57E1520066B48B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C93E9A811D57E1380066B48B /* process */;
+			targetProxy = C93E9A891D57E1520066B48B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C93E9A551D57DD4A0066B48B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C93E9A561D57DD4A0066B48B /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C93E9A591D57DD4A0066B48B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C93E9A5A1D57DD4A0066B48B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C93E9A5C1D57DD4A0066B48B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SharedXPC/SharedXPC.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application: Matt Rajca (RJKYY38TY2)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RJKYY38TY2;
+				INFOPLIST_FILE = SharedXPC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MattRajca.SharedXPC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C93E9A5D1D57DD4A0066B48B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SharedXPC/SharedXPC.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application: Matt Rajca (RJKYY38TY2)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SharedXPC/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MattRajca.SharedXPC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C93E9A6F1D57DD590066B48B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Service/Service.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application: Matt Rajca (RJKYY38TY2)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RJKYY38TY2;
+				INFOPLIST_FILE = Service/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MattRajca.XPCService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C93E9A701D57DD590066B48B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Service/Service.entitlements;
+				CODE_SIGN_IDENTITY = "Developer ID Application: Matt Rajca (RJKYY38TY2)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = RJKYY38TY2;
+				INFOPLIST_FILE = Service/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MattRajca.XPCService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C93E9A871D57E1380066B48B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C93E9A881D57E1380066B48B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C93E9A451D57DD4A0066B48B /* Build configuration list for PBXProject "SharedXPC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C93E9A591D57DD4A0066B48B /* Debug */,
+				C93E9A5A1D57DD4A0066B48B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C93E9A5B1D57DD4A0066B48B /* Build configuration list for PBXNativeTarget "SharedXPC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C93E9A5C1D57DD4A0066B48B /* Debug */,
+				C93E9A5D1D57DD4A0066B48B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C93E9A6E1D57DD590066B48B /* Build configuration list for PBXNativeTarget "XPCService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C93E9A6F1D57DD590066B48B /* Debug */,
+				C93E9A701D57DD590066B48B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C93E9A861D57E1380066B48B /* Build configuration list for PBXNativeTarget "process" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C93E9A871D57E1380066B48B /* Debug */,
+				C93E9A881D57E1380066B48B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C93E9A421D57DD4A0066B48B /* Project object */;
+}
