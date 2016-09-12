@@ -15,11 +15,11 @@
 @implementation AppDelegate
 
 - (NSURL *)_childProcessURL {
-	return [[NSBundle mainBundle].executableURL.URLByDeletingLastPathComponent URLByAppendingPathComponent:@"process"];
+	return [NSBundle.mainBundle.executableURL.URLByDeletingLastPathComponent URLByAppendingPathComponent:@"process"];
 }
 
 - (NSURL *)_serviceURL {
-	return [[NSBundle mainBundle].executableURL.URLByDeletingLastPathComponent URLByAppendingPathComponent:@"Service"];
+	return [NSBundle.mainBundle.executableURL.URLByDeletingLastPathComponent URLByAppendingPathComponent:@"Service"];
 }
 
 - (void)_launchProcess {
@@ -35,13 +35,12 @@
 
 	NSMachPort *clientPort = (NSMachPort *)[NSMachPort port];
 	clientPort.delegate = self;
-	[clientPort scheduleInRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
-	[[NSMachBootstrapServer sharedInstance] registerPort:clientPort name:@"App Client"];
+	[clientPort scheduleInRunLoop:NSRunLoop.currentRunLoop forMode:NSDefaultRunLoopMode];
 
 	// Wait for the server to be available.
 	NSMachPort *sendPort = nil;
 	while (sendPort == nil) {
-		sendPort = (NSMachPort *)[[NSMachBootstrapServer sharedInstance] portForName:@"RJKYY38TY2.com.MR.server"];
+		sendPort = (NSMachPort *)[NSMachBootstrapServer.sharedInstance portForName:@"RJKYY38TY2.com.MR.server"];
 	}
 
 	NSError *error;
@@ -55,7 +54,7 @@
 	}
 
 	NSPortMessage *message = [[NSPortMessage alloc] initWithSendPort:sendPort receivePort:clientPort components:@[data]];
-	[message sendBeforeDate:[NSDate distantFuture]];
+	[message sendBeforeDate:NSDate.distantFuture];
 }
 
 - (void)handlePortMessage:(NSPortMessage *)message {

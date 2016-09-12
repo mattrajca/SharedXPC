@@ -15,7 +15,7 @@
 @implementation AppDelegate
 
 - (NSURL *)_childProcessURL {
-	return [[NSBundle mainBundle].executableURL.URLByDeletingLastPathComponent URLByAppendingPathComponent:@"process"];
+	return [NSBundle.mainBundle.executableURL.URLByDeletingLastPathComponent URLByAppendingPathComponent:@"process"];
 }
 
 - (void)_connectFromApp {
@@ -27,7 +27,7 @@
 	xpc_object_t data = xpc_dictionary_create(NULL, NULL, 0);
 	xpc_dictionary_set_uint64(data, "process", 1);
 	xpc_connection_send_message_with_reply(connection, data, dispatch_get_main_queue(), ^(xpc_object_t  _Nonnull object) {
-		NSLog(@"%ld", (long)xpc_dictionary_get_uint64(object, "hi"));
+		NSLog(@"Obtained result: %ld", (long)xpc_dictionary_get_uint64(object, "hi"));
 	});
 }
 

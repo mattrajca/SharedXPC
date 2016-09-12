@@ -79,7 +79,6 @@
 		C93E9A561D57DD4A0066B48B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		C93E9A581D57DD4A0066B48B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C93E9A681D57DD590066B48B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C93E9A6A1D57DD590066B48B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C93E9A721D57DE6B0066B48B /* SharedMach.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SharedMach.entitlements; sourceTree = "<group>"; };
 		C93E9A821D57E1380066B48B /* process */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = process; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93E9A841D57E1380066B48B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -156,7 +155,6 @@
 				C93E9A581D57DD4A0066B48B /* Info.plist */,
 				C93E9A501D57DD4A0066B48B /* Supporting Files */,
 			);
-			name = SharedMach;
 			path = SharedMach;
 			sourceTree = "<group>";
 		};
@@ -171,7 +169,6 @@
 		C93E9A631D57DD590066B48B /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				C93E9A6A1D57DD590066B48B /* Info.plist */,
 				C93E9A681D57DD590066B48B /* main.m */,
 				C945D6BB1D85B3DB00D59DEB /* Server.h */,
 				C945D6BC1D85B3DB00D59DEB /* Server.m */,
@@ -390,12 +387,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				DEVELOPMENT_TEAM = RJKYY38TY2;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				OTHER_LDFLAGS = (
-					"-sectcreate",
-					__TEXT,
-					__info_plist,
-					"Service-Info.plist",
-				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -408,12 +400,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				DEVELOPMENT_TEAM = RJKYY38TY2;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
-				OTHER_LDFLAGS = (
-					"-sectcreate",
-					__TEXT,
-					__info_plist,
-					"Service-Info.plist",
-				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -531,12 +518,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				OTHER_CODE_SIGN_FLAGS = "";
-				OTHER_LDFLAGS = (
-					"-sectcreate",
-					__TEXT,
-					__info_plist,
-					"process-Info.plist",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -545,12 +526,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				OTHER_CODE_SIGN_FLAGS = "";
-				OTHER_LDFLAGS = (
-					"-sectcreate",
-					__TEXT,
-					__info_plist,
-					"process-Info.plist",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

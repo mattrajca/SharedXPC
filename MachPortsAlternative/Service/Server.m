@@ -16,10 +16,10 @@
 - (void)run {
 	NSMachPort *serverPort = (NSMachPort *)[NSMachPort port];
 	[serverPort setDelegate:self];
-	[serverPort scheduleInRunLoop:[NSRunLoop currentRunLoop] forMode:NSDefaultRunLoopMode];
-	[[NSMachBootstrapServer sharedInstance] registerPort:serverPort name:@"RJKYY38TY2.com.MR.server"];
+	[serverPort scheduleInRunLoop:NSRunLoop.currentRunLoop forMode:NSDefaultRunLoopMode];
+	[NSMachBootstrapServer.sharedInstance registerPort:serverPort name:@"RJKYY38TY2.com.MR.server"];
 
-	[[NSRunLoop currentRunLoop] run];
+	[NSRunLoop.currentRunLoop run];
 }
 
 - (void)handlePortMessage:(NSPortMessage *)message {
@@ -44,7 +44,7 @@
 	}
 
 	NSPortMessage *reply = [[NSPortMessage alloc] initWithSendPort:message.sendPort receivePort:nil components:@[responseData]];
-	[reply sendBeforeDate:[NSDate distantFuture]];
+	[reply sendBeforeDate:NSDate.distantFuture];
 }
 
 @end
